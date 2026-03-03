@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Head from "next/head";
 
 // Dual gate: BOTH smart followers AND median impressions must be met
 const TIER_GATES = [
@@ -250,7 +251,7 @@ const MetricRow = ({ label, value, points, weight, gate, highlight }) => (
   </div>
 );
 
-export default function App() {
+export default function CreatorScoring() {
   const [query, setQuery] = useState("");
   const [result, setResult] = useState(null);
   const [error, setError] = useState("");
